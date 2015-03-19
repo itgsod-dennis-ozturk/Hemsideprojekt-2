@@ -16,7 +16,7 @@ body {
 
 #Logo {
     float: left;
-    width: 18%;
+    width: 227.5px;
     height: 220px;
     background-color: blue;
 }
@@ -67,20 +67,19 @@ body {
 
 /*----------------------------div-Menu_bar end--------------------------------*/
 
-/*----------------------------div-Content för Hem--------------------------------*/
+/*----------------------------div-Content--------------------------------*/
 #Content{
 
     width: 100%;
-    height: 550px;
+    height: 700px;
     background-color: blue;
 }
 
 #Sidebar {
     float: left;
-    width: 20%;
+    width: 25%;
     height: 500px;
     background-color: black;
-    margin-left: 60px;
 }
 
 #Latest_news {
@@ -98,7 +97,40 @@ body {
     float: right;
     margin-right: 100px;
 }
-/*----------------------------div-Content end Hem----------------------------*/
+
+#Om_oss {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+#Bar_1 {
+    width: 30%;
+    height: 200px;
+    background-color: black;
+    float: right;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+#Bar_2 {
+    width: 30%;
+    height: 200px;
+    background-color: black;
+    float: left;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+#Bar_3 {
+    width: 30%;
+    height: 200px;
+    background-color: black;
+    margin: 0;
+    margin-left: 450px;
+    margin-top: 10px;
+}
+/*----------------------------div-Content----------------------------*/
 
 /*----------------------------div Footer---------------------------------*/
 
@@ -113,11 +145,13 @@ body {
 /*----------------------------div Footer end---------------------------------*/
 
 
-/*----------------------------div-Content för Program--------------------------------*/
+/*----------------------------div-Content för KONTAKT--------------------------------*/
 
-#Sidebar_for_programming{
+#Google_map {
     float: left;
-    width: 25%;
-    height: 500px;
-    background-color: black;    
+    width: 70%;
+    height: 250px;
+    background-color: black;
+    margin-top: 20px;
+    margin-left: 200px;
 }

@@ -1,12 +1,12 @@
 body {
-    font-family: Arial, Helvetica, sans-serif ;
-    margin: 0;
-    height: 1000px;
+    font-family: 'Capriola-Regular';
+    margin: auto;
+    width: 1280px;
+    height: 964px;
+    margin:0;
 }
 
 /*-----------------------------HEM-------------------------------------*/
-/*-----------------------------Home.html----------------------------------*/
-/*-----------------------------div-Header---------------------------------*/
 
 #Header {
     width: 100%;
@@ -16,20 +16,18 @@ body {
 
 #Logo {
     float: left;
-    width: 227.5px;
+    width: 20%;
     height: 220px;
     background-color: blue;
 }
 
 
 #Title {
-    width:82%;
+    width: 100%;
     height: 220px;
-    float: right;
     background-color: black;
 }
 
-/*----------------------------div-header end-----------------------------*/
 
 /*----------------------------div-Menu_bar-----------------------------*/
 #nav {
@@ -65,14 +63,14 @@ body {
     border-right: 1px solid #8B6854;
 }
 
-/*----------------------------div-Menu_bar end--------------------------------*/
 
 /*----------------------------div-Content--------------------------------*/
 #Content{
 
     width: 100%;
-    height: 700px;
+    height: 500px;
     background-color: blue;
+
 }
 
 #Sidebar {
@@ -108,9 +106,9 @@ body {
     width: 30%;
     height: 200px;
     background-color: black;
-    float: right;
-    margin-right: 25px;
-    margin-top: 10px;
+    float: left;
+    margin-right: 40px;
+    margin-top: 45px;
 }
 
 #Bar_2 {
@@ -119,16 +117,16 @@ body {
     background-color: black;
     float: left;
     margin-left: 25px;
-    margin-top: 10px;
+    margin-top: 45px;
 }
 
 #Bar_3 {
     width: 30%;
     height: 200px;
     background-color: black;
+    float: right;
     margin: 0;
-    margin-left: 450px;
-    margin-top: 10px;
+    margin-top: 45px;
 }
 /*----------------------------div-Content----------------------------*/
 
@@ -140,6 +138,7 @@ body {
     height: 180px;
     background-color: gray;
     float: left;
+    margin-top: 10px;
 }
 
 /*----------------------------div Footer end---------------------------------*/
@@ -149,9 +148,8 @@ body {
 
 #Google_map {
     float: left;
-    width: 70%;
-    height: 250px;
+    width: 50%;
+    height: 300px;
     background-color: black;
-    margin-top: 20px;
-    margin-left: 200px;
+    margin-left: 310px;
 }

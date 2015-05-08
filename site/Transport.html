@@ -4,6 +4,64 @@
     <meta charset="UTF-8">
     <title>Fordonsgymnasiet</title>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+    <script type="text/javascript">
+        $('#slider').cycle({
+            fx:     'scrollHorz',
+            speed:  'slow',
+            timeout: 3000,
+            next:   '#next',
+            prev:   '#prev'
+        });
+
+    </script>
+    <style type="text/css">
+        #wrapper {
+            display: block;
+            margin: auto;
+            height: 350px;
+            width: 100%;
+        }
+        #content {
+            overflow: auto;
+        }
+        #slider {
+            display: block;
+            float: left;
+            height: 350px;
+            width: 60%;
+            overflow: hidden;
+            position: absolute;
+            border: 1px solid black;
+        }
+        #prev {
+            background-image: url(img/leftArrow.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: block;
+            float: left;
+            height: 100px;
+            margin-top: 130px;
+            width: 50px;
+            position: relative;
+            z-index: 99;
+            margin-left: 30px;
+        }
+        #next {
+            background-image: url(img/rightArrow.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: block;
+            float: right;
+            margin-top: 130px;
+            height: 100px;
+            width: 50px;
+            position: relative;
+            z-index: 99;
+            margin-right: 30px;
+        }
+    </style>
 </head>
 <body>
 
@@ -44,11 +102,22 @@
         </ul>
     </div>
 
-    <div id="Latest_news"></div>
 
+    <div id="Latest_news">
+        <div id="wrapper">
+            <div class="controller" id="prev"></div>
+            <div id="slider">
+                <img src="images/rest.1.jpg" width="1300" height="400" alt="Table-1">
+                <img src="images/rest.2.jpg" width="1300" height="400" alt="Table-1">
+                <img src="images/rest.3.jpg" width="1300" height="500" alt="Table-1">
+            </div>
+
+            <div class="controller" id="next"></div>
+
+        </div>
+    </div>
     <div id="Under_text"></div>
 </div>
-
 <div id="Footer"></div>
 
 </body>

@@ -112,17 +112,23 @@ body {
 
 #Under_text {
     width: 60%;
-    height: 110.3px;
+    height: 120px;
     background: #ffffff;
     opacity: 0.7;
     float: right;
     margin-right: 100px;
+    font-size: 12px;
+    border-bottom: 10px solid rgba(0,0,0,0.9);
+}
+
+.text > p {
+    font-size: 12px;
 }
 
 #Wrapper_for_Latest_news{
     width: 60%;
     height: 10px;
-    background-color: red;
+    background-color:rgba(0,0,0,)
     float: right;
     margin-right: 100px;
 }
@@ -163,15 +169,7 @@ body {
 
 /*----------------------------div Footer---------------------------------*/
 
-#Footer {
 
-    width: 100%;
-    height: 180px;
-    background-color: ;
-    float: left;
-    margin-top: 10px;
-    border-top: solid 10px gray;
-}
 
 /*----------------------------div Footer end---------------------------------*/
 
@@ -274,4 +272,101 @@ nav.vertical > ul > li > div > ul > li:hover > a {
     background-color: red;
     color: rgb(255,255,255);
     padding: 10px 0 10px 50px;
+}
+
+#footer {
+    background-color: lightgrey;
+    border-top: 5px solid rgba(0,0,0,.8);
+    width: 100%;
+    padding: 28px 0;
+    position: absolute ;
+    left: 0;
+}
+#footer > div {
+    width: 960px;
+    margin: 0 auto;
+}
+#footer > div ul {
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+    margin: 0 0 12px;
+    padding: 0 10px;
+}
+#footer > div > ul > li {
+    float: left;
+    width: 140px;
+    margin-left: 20px;
+}
+#footer > div > ul > li:first-child {
+    width: 620px;
+    margin: 0;
+}
+#footer h4 {
+    color: #b90044;
+    font-family: "Capriola-Regular";
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 18px;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+#footer p {
+    color: black;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0 10px;
+}
+#footer p a {
+    color: black;
+    text-decoration: none;
+}
+#footer p a:hover {
+    color: #93460d;
+}
+#footer ul.navigation {
+    padding: 0;
+}
+#footer ul.navigation li {
+    float: left;
+    width: 60px;
+    padding-left: 10px;
+}
+#footer ul.navigation li a {
+    color: black;
+    font-size: 12px;
+    line-height: 24px;
+    text-decoration: none;
+}
+#footer ul.navigation li a:hover, #connect a:hover {
+    color: #93460d;
+}
+#connect a {
+    color: black;
+    display: block;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 10px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+#connect a.twitter {
+    background-position: 0 -62px;
+}
+#connect a.facebook {
+    background-position: 0 -120px;
+}
+#connect a.twitter:hover {
+    background-position: 0 -33px;
+}
+#connect a.facebook:hover {
+    background-position: 0 -91px;
+}
+#footnote {
+    color: #b09779;
+    font-size: 12px;
+    line-height: 24px;
+    margin: 0;
+    text-align: center;
 }

@@ -17,7 +17,7 @@
 
     </script>
     <style type="text/css">
-        #wrapper {
+        #slide {
             display: block;
             margin: auto;
             height: 350px;
@@ -30,7 +30,7 @@
             display: block;
             float: left;
             height: 350px;
-            width: 60%;
+            width: 768px;
             overflow: hidden;
             position: absolute;
             border: 1px solid black;
@@ -75,7 +75,7 @@
 <div id="Menu_bar">
     <ul id="nav">
         <li class="selected">
-            <a href="Home.html">Hem</a>
+            <a href="index.html">Hem</a>
         </li>
         <li>
             <a href="Program.html">Program</a>
@@ -114,7 +114,7 @@
                         <ul>
                             <li><a href="Buss.html">Persontransporter (buss)</a> </li>
                             <li><a href="Godstransporter.html">Godstransporter</a></li>
-                            <li><a href="Personbilsmekaniker".html>Personbilsmekaniker</a></li>
+                            <li><a href="Personbilsmekaniker.html">Personbilsmekaniker</a></li>
                         </ul>
                     </div>
                 </li>
@@ -127,19 +127,59 @@
         <div id="slide">
             <div class="controller" id="prev"></div>
             <div id="slider">
-                <img src="images/rest.1.jpg" width="1300" height="400" alt="Table-1">
-                <img src="images/rest.2.jpg" width="1300" height="400" alt="Table-1">
-                <img src="images/rest.3.jpg" width="1300" height="500" alt="Table-1">
+                <img src="img/program1.png" width="780" height="400" alt="Table-1">
+                <img src="img/bil2.png" width="780" height="400" alt="Table-1">
+                <img src="img/bil3.png" width="780" height="400" alt="Table-1">
             </div>
             <div class="controller" id="next"></div>
         </div>
 
     </div>
-    <div id="Under_text"></div>
+    <div id="Under_text">
+        <div class="text"><p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p> </div>
+    </div>
     <div id="Wrapper_for_Latest_news"></div>
 
 </div>
-<div id="Footer"></div>
+<div id="footer">
+    <div>
+        <ul>
+            <li>
+                <h4>Om oss</h4>
+                <p>
+                    orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+            </li>
+            <li>
+                <h4>Länkar</h4>
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html">Hem</a>
+                    </li>
+
+                    <li>
+                        <a href="Program.html">Program</a>
+                    </li>
+                    <li>
+                        <a href="Kontakt.html">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="Schema.html">Schema</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>Följ oss här</h4>
+                <div id="connect">
+                    <a href="https://twitter.com/fordonsgymnasiet" target="_blank" class="twitter">Twitter</a><a href="https://www.facebook.com/fordonsgymnasiet" target="_blank" class="facebook">Facebook</a>
+                </div>
+            </li>
+        </ul>
+        <p id="footnote">
+            © Copyright 2015. All rights reserved.
+        </p>
+    </div>
+</div>
 
 </body>
 </html>

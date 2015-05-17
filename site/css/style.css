@@ -66,6 +66,11 @@ body {
     height: 550px;
 }
 
+#Content_k {
+    width: 100%;
+    height: 490px;
+}
+
 #Sidebar_program {
     float: left;
     width: 26%;
@@ -93,15 +98,19 @@ body {
 }
 
 #Sidebar_info {
-    height: 260px;
+    height: 280px;
     background: rgb(255,255,255);
     opacity: 0.7;
+}
+
+#Sidebar_info> p {
+    margin: 0;
 }
 
 #Wrapper_bottom_sidebar{
     width: 100%;
     height: 10px;
-    background-color: red;
+    background-color: rgba(0,0,0,0.5);
 }
 #Latest_news {
     width: 60%;
@@ -111,6 +120,17 @@ body {
 }
 
 #Under_text {
+    width: 60%;
+    height: 120px;
+    background: #ffffff;
+    opacity: 0.7;
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+    font-size: 12px;
+    border-bottom: 10px solid rgba(0,0,0,0.9);
+}
+#Under_text_program {
     width: 60%;
     height: 120px;
     background: #ffffff;
@@ -136,45 +156,54 @@ body {
 #About_us {
     width: 100%;
     height: 200px;
-    background-color: black;
+    background-color: lightgrey;
+}
+
+#About_us > h1 {
+    color:black;
+    width: 10%;
+    margin-left: 585px;
+}
+#About_us > p {
+    color:black;
 }
 
 #Bar_1 {
     width: 30%;
     height: 200px;
-    background-color: black;
+    background-color: lightgrey;
     float: left;
-    margin-right: 40px;
+    margin-left: 150px;
     margin-top: 45px;
+    border-radius: 5px;
+}
+#Bar_1 > h2{
+    width: 50%;
+    margin-left: 115px;
+}
+#Bar_1 > h4{
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 #Bar_2 {
     width: 30%;
     height: 200px;
-    background-color: black;
-    float: left;
-    margin-left: 25px;
-    margin-top: 45px;
-}
-
-#Bar_3 {
-    width: 30%;
-    height: 200px;
-    background-color: black;
+    background-color: lightgrey;
     float: right;
-    margin: 0;
+    margin-right: 150px;
     margin-top: 45px;
+    border-radius: 5px;
 }
-/*----------------------------div-Content----------------------------*/
+#Bar_2 > h2{
+    width: 42%;
+    margin-left: 150px;
+}
+#Bar_2 > h4{
+    margin-top: 10px;
+    margin-left: 5px;
+}
 
-/*----------------------------div Footer---------------------------------*/
-
-
-
-/*----------------------------div Footer end---------------------------------*/
-
-
-/*----------------------------div-Content för KONTAKT--------------------------------*/
 
 #Google_map {
     float: left;
@@ -182,8 +211,10 @@ body {
     height: 300px;
     background-color: black;
     margin-left: 310px;
+    margin-top: 45px;
 }
 
+/* Sidebaren i Program.html */
 
 * {
     margin: 0;
@@ -273,6 +304,7 @@ nav.vertical > ul > li > div > ul > li:hover > a {
     color: rgb(255,255,255);
     padding: 10px 0 10px 50px;
 }
+/* footer för alla förutom Kontakt.html */
 
 #footer {
     background-color: lightgrey;
@@ -339,6 +371,107 @@ nav.vertical > ul > li > div > ul > li:hover > a {
     text-decoration: none;
 }
 #footer ul.navigation li a:hover, #connect a:hover {
+    color: #93460d;
+}
+#connect a {
+    color: black;
+    display: block;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 10px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+#connect a.twitter {
+    background-position: 0 -62px;
+}
+#connect a.facebook {
+    background-position: 0 -120px;
+}
+#connect a.twitter:hover {
+    background-position: 0 -33px;
+}
+#connect a.facebook:hover {
+    background-position: 0 -91px;
+}
+#footnote {
+    color: #b09779;
+    font-size: 12px;
+    line-height: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* footer bara för Kontakt.html */
+
+#footer_k {
+    background-color: lightgrey;
+    border-top: 5px solid rgba(0,0,0,.8);
+    width: 100%;
+    padding: 28px 0;
+    position: absolute ;
+    left: 0;
+    margin-top: 50px;
+}
+#footer_k > div {
+    width: 960px;
+    margin: 0 auto;
+}
+#footer_k > div ul {
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+    margin: 0 0 12px;
+    padding: 0 10px;
+}
+#footer_k > div > ul > li {
+    float: left;
+    width: 140px;
+    margin-left: 20px;
+}
+#footer_k > div > ul > li:first-child {
+    width: 620px;
+    margin: 0;
+}
+#footer_k h4 {
+    color: #b90044;
+    font-family: "Capriola-Regular";
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 18px;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+#footer_k p {
+    color: black;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0 10px;
+}
+#footer_k p a {
+    color: black;
+    text-decoration: none;
+}
+#footer_k p a:hover {
+    color: #93460d;
+}
+#footer_k ul.navigation {
+    padding: 0;
+}
+#footer_k ul.navigation li {
+    float: left;
+    width: 60px;
+    padding-left: 10px;
+}
+#footer_k ul.navigation li a {
+    color: black;
+    font-size: 12px;
+    line-height: 24px;
+    text-decoration: none;
+}
+#footer_k ul.navigation li a:hover, #connect a:hover {
     color: #93460d;
 }
 #connect a {

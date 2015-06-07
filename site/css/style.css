@@ -120,23 +120,23 @@ body {
 }
 
 #Under_text {
-    width: 60%;
+    width: 49.9%;
     height: 120px;
     background: #ffffff;
     opacity: 0.7;
     float: right;
-    margin-right: 100px;
+    margin-right: 168px;
     margin-top: 20px;
     font-size: 12px;
     border-bottom: 10px solid rgba(0,0,0,0.9);
 }
 #Under_text_program {
-    width: 60%;
+    width: 49.9%;
     height: 120px;
     background: #ffffff;
     opacity: 0.7;
     float: right;
-    margin-right: 100px;
+    margin-right: 168px;
     font-size: 12px;
     border-bottom: 10px solid rgba(0,0,0,0.9);
 }

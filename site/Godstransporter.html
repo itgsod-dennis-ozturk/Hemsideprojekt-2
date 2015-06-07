@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Fordonsgymnasiet</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+    <script type="text/javascript">
+        $('#slider').cycle({
+            fx:     'scrollHorz',
+            speed:  'slow',
+            timeout: 3000,
+            next:   '#next',
+            prev:   '#prev'
+        });
+
+    </script>
+    <style type="text/css">
+        #slide {
+            display: block;
+            margin: auto;
+            height: 350px;
+            width: 100%;
+        }
+        #content {
+            overflow: auto;
+        }
+        #slider {
+            display: block;
+            float: left;
+            height: 350px;
+            width: 640px;
+            overflow: hidden;
+            position: absolute;
+            border: 1px solid black;
+            margin-left: 60px;
+        }
+        #prev {
+            background-image: url(img/leftArrow.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: block;
+            float: left;
+            height: 100px;
+            margin-top: 130px;
+            width: 50px;
+            position: relative;
+            z-index: 99;
+            margin-left: 30px;
+        }
+        #next {
+            background-image: url(img/rightArrow.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: block;
+            float: right;
+            margin-top: 130px;
+            height: 100px;
+            width: 50px;
+            position: relative;
+            z-index: 99;
+            margin-right: 30px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div id="Header">
+    <div id="Title">
+        <img src="img/Title.png">
+    </div>
+</div>
+
+<div id="Menu_bar">
+    <ul id="nav">
+        <li class="selected">
+            <a href="index.html">Hem</a>
+        </li>
+        <li>
+            <a href="Program.html">Program</a>
+        </li>
+        <li>
+            <a href="Kontakt.html">Kontakt</a>
+        </li>
+
+        <li>
+            <a href="http://www.novasoftware.se/webviewer/(S(1x0lyjuvkdivo5rdujigxial))/design1.aspx?schoolid=89280&code=234523">Schema</a>
+        </li>
+    </ul>
+</div>
+
+<div id="Content">
+
+    <div id="sidebar">
+        <nav class="vertical">
+            <ul>
+                <li>
+                    <a href="#">Våra utbildningar</a>
+                    <div>
+                        <ul>
+                            <li> <a href="Godshantering.html">Godshantering</a> </li>
+                            <li> <a href="Karosser_Lackering.html">Karroser & Lackering</a> </li>
+                            <li> <a href="Lastbil_mobila_maskiner.html">Lastbil & Mobila maskiner</a></li>
+                            <li> <a href="Personbilar.html">Personbilar </a> </li>
+                            <li>  <a href="Nationella_inr.html">Nationella inriktningar </a> </li>
+                            <li>   <a href="Transport.html">Transport</a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Vuxenutbildning</a>
+                    <div>
+                        <ul>
+                            <li><a href="Buss.html">Persontransporter (buss)</a> </li>
+                            <li><a href="Godstransporter.html">Godstransporter</a></li>
+                            <li><a href="Personbilsmekaniker.html">Personbilsmekaniker</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div id="Latest_news">
+        <div id="slide">
+            <div id="slider">
+                <img src="img/godstransport.jpg">
+            </div>
+        </div>
+
+    </div>
+    <div id="Under_text_program">
+        <div class="text"><p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p> </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div>
+        <ul>
+            <li>
+                <h4>Om oss</h4>
+                <p>
+                    orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+            </li>
+            <li>
+                <h4>Länkar</h4>
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html">Hem</a>
+                    </li>
+
+                    <li>
+                        <a href="Program.html">Program</a>
+                    </li>
+                    <li>
+                        <a href="Kontakt.html">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="Schema.html">Schema</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>Följ oss här</h4>
+                <div id="connect">
+                    <a href="https://twitter.com/fordonsgymnasiet" target="_blank" class="twitter">Twitter</a><a href="https://www.facebook.com/fordonsgymnasiet" target="_blank" class="facebook">Facebook</a>
+                </div>
+            </li>
+        </ul>
+        <p id="footnote">
+            © Copyright 2015. All rights reserved.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

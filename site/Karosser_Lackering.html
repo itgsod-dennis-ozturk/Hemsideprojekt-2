@@ -7,16 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
-    <script type="text/javascript">
-        $('#slider').cycle({
-            fx:     'scrollHorz',
-            speed:  'slow',
-            timeout: 3000,
-            next:   '#next',
-            prev:   '#prev'
-        });
 
-    </script>
+
     <style type="text/css">
         #slide {
             display: block;
@@ -63,15 +55,19 @@
             z-index: 99;
             margin-right: 30px;
         }
+        @media (max-width: 600px) {
+            #slider{
+                border: none;
+            }
+        }
     </style>
 
 </head>
 <body>
 
 <div id="Header">
-    <div id="Title">
-        <img src="img/Title.png">
-    </div>
+    <img id="Title" src="img/Title.png">
+    <img id="Title_mini" src="css/title_mini.jpg">
 </div>
 
 <div id="Menu_bar">
@@ -92,7 +88,7 @@
     </ul>
 </div>
 
-<div id="Content">
+<div class="facet_sidebar" id="Content">
 
     <div id="sidebar">
         <nav class="vertical">
@@ -128,8 +124,10 @@
     <div id="Latest_news">
         <div id="slide">
             <div id="slider">
-                <img src="img/Karroser.jpg">
+                <img id="Picture_n" src="img/Karroser.jpg">
+                <img id="Picture_s" src="img/Karroser_mini.jpg">
             </div>
+
         </div>
 
     </div>
@@ -142,40 +140,42 @@
     <div>
         <ul>
             <li>
-                <h4>Om oss</h4>
+                <div id="footer_about_us">  <h4>Om oss</h4> </div>
                 <p>
                     orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
                 </p>
             </li>
             <li>
-                <h4>Länkar</h4>
-                <ul class="navigation">
-                    <li>
-                        <a href="index.html">Hem</a>
-                    </li>
+                <div id="footer_link"> <h4>Länkar</h4>
+                    <ul class="navigation">
+                        <li>
+                            <a href="index.html">Hem</a>
+                        </li>
 
-                    <li>
-                        <a href="Program.html">Program</a>
-                    </li>
-                    <li>
-                        <a href="Kontakt.html">Kontakt</a>
-                    </li>
-                    <li>
-                        <a href="Schema.html">Schema</a>
-                    </li>
-                </ul>
+                        <li>
+                            <a href="Program.html">Program</a>
+                        </li>
+                        <li>
+                            <a href="Kontakt.html">Kontakt</a>
+                        </li>
+                        <li>
+                            <a href="Schema.html">Schema</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li>
-                <h4>Följ oss här</h4>
-                <div id="connect">
-                    <a href="https://twitter.com/fordonsgymnasiet" target="_blank" class="twitter">Twitter</a><a href="https://www.facebook.com/fordonsgymnasiet" target="_blank" class="facebook">Facebook</a>
-                </div>
+                <div id="footer_follow"> <h4>Följ oss här</h4>
+                    <div id="connect">
+                        <a href="https://twitter.com/fordonsgymnasiet" target="_blank" class="twitter">Twitter</a><a href="https://www.facebook.com/fordonsgymnasiet" target="_blank" class="facebook">Facebook</a>
+                    </div>
             </li>
         </ul>
         <p id="footnote">
             © Copyright 2015. All rights reserved.
         </p>
     </div>
+</div>
 </div>
 
 </body>

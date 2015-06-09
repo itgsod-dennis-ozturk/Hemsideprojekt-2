@@ -5,10 +5,21 @@
     <title>Fordonsgymnasiet</title>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
     <script type="text/javascript">
         $('#slider').cycle({
+            fx:     'scrollHorz',
+            speed:  'slow',
+            timeout: 3000,
+            next:   '#next',
+            prev:   '#prev'
+        });
+
+    </script>
+    <script type="text/javascript">
+        $('#slider_2').cycle({
             fx:     'scrollHorz',
             speed:  'slow',
             timeout: 3000,
@@ -36,6 +47,18 @@
             position: absolute;
             border: 1px solid black;
             margin-left: 60px;
+
+        }
+        #slider_2 {
+            display: block;
+            float: left;
+            height: 370px;
+            width: 640px;
+            overflow: hidden;
+            position: absolute;
+            border: 1px solid black;
+            margin-left: 60px;
+            display: none;
         }
         #prev {
             background-image: url(img/leftArrow.png);
@@ -63,14 +86,60 @@
             z-index: 99;
             margin-right: 65px;
         }
+        #Home_2_s{
+            display: none;
+        }
+        #Home_s{
+            display: none;
+        }
+
+
+        @media (max-width: 450px){
+            #slider{
+                width: 400px;
+                height: 220px;
+                display: none;
+            }
+            #slider_2{
+                width: 400px;
+                height: 220px;
+                margin-left: 120px;
+                display: block;
+            }
+            #Home_2_s{
+                display: block;
+            }
+            #Home_s{
+                display: block;
+            }
+            #Home{
+                display: none;
+            }
+            #Home_2{
+                display: none;
+            }
+            #next{
+                display: none;
+            }
+            #prev{
+                display: none;
+            }
+            #Under_text{
+                margin-right: 882px;
+                width: 32%;
+                height: 200px;
+                margin-top: 130px;
+                border-top: solid black 2px;
+        }
+
+       }
     </style>
 </head>
 <body>
 
 <div id="Header">
-    <div id="Title">
-        <img src="./img/Title.png">
-    </div>
+        <img id="Title" src="./img/Title.png">
+        <img id="Title_mini" src="css/title_mini.jpg">
 </div>
 
 <div id="Menu_bar">
@@ -99,9 +168,13 @@
             <div id="wrapper">
             <div class="controller" id="prev"></div>
             <div id="slider">
-                <img src="img/Home.jpg">
-                <img src="img/home_2.jpg">
+                <img id="Home" src="img/Home.jpg">
+                <img id="Home_2" src="img/home_2.jpg">
             </div>
+                <div id="slider_2">
+                <img id="Home_s" src="img/Home_mini.jpg">
+                <img id="Home_2_s" src="img/home_2_mini.jpg">
+                </div>
             <div class="controller" id="next"></div>
         </div>
     </div>
@@ -116,13 +189,13 @@
     <div>
         <ul>
             <li>
-                <h4>Om oss</h4>
+                <div id="footer_about_us"> <h4>Om oss</h4> </div>
                 <p>
                     orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
                 </p>
             </li>
             <li>
-                <h4>Länkar</h4>
+              <div id="footer_link"> <h4>Länkar</h4></div>
                 <ul class="navigation">
                     <li>
                         <a href="index.html">Hem</a>
@@ -140,16 +213,18 @@
                 </ul>
             </li>
             <li>
-                <h4>Följ oss här</h4>
+             <div id="footer_follow">  <h4>Följ oss här</h4>
                 <div id="connect">
                     <a href="https://twitter.com/fordonsgymnasiet" target="_blank" class="twitter">Twitter</a><a href="https://www.facebook.com/fordonsgymnasiet" target="_blank" class="facebook">Facebook</a>
                 </div>
             </li>
         </ul>
-        <p id="footnote">
+
+    <p id="footnote">
             © Copyright 2015. All rights reserved.
         </p>
     </div>
+</div>
 </div>
 
 

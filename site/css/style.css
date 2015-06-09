@@ -3,10 +3,9 @@ body {
     margin: auto;
     width: 1280px;
     height: 964px;
-    margin:0;
+    margin: auto;
     background-image: url("tweed.png");
 }
-
 /*-----------------------------HEM-------------------------------------*/
 
 #Header {
@@ -309,7 +308,7 @@ nav.vertical > ul > li > div > ul > li:hover > a {
 #footer {
     background-color: lightgrey;
     border-top: 5px solid rgba(0,0,0,.8);
-    width: 100%;
+    width: 1280px;
     padding: 28px 0;
     position: absolute ;
     left: 0;
@@ -502,4 +501,77 @@ nav.vertical > ul > li > div > ul > li:hover > a {
     line-height: 24px;
     margin: 0;
     text-align: center;
+}
+#Picture_s{
+    display: none;
+}
+
+#Title_mini{
+    width: 400px;
+    height: 220px;
+    display: none;
+}
+
+@media (max-width: 450px) {
+    #Title{
+        display: none;
+    }
+    #Title_mini{
+    display: block;
+    }
+    #sidebar{
+        width: 100% ;
+        margin-left: 38px;
+    }
+    #Menu_bar{
+        width: 31.3%;
+}
+    #Content {
+        width: 100%;
+    }
+    #Latest_news{
+        width: 400px;
+        height: 100px;
+        margin-right:1000px;
+        margin-top: 20px;
+    }
+    #slider{
+        border:none;
+    }
+    #Picture_n{
+        display: none;
+    }
+    #footer{
+        margin-top: 420px;
+        width: 402px;
+    }
+    #footer p {
+        width: 62%;
+    }
+    #footer div{
+        width: 100%;
+    }
+    #Under_text_program{
+        margin-right: 882px;
+        width: 32%;
+        height: 200px;
+        margin-top: 130px;
+        border-top: solid black 2px;
+    }
+    #Picture_s{
+    display: block;
+        margin-left: 58px;
+    }
+    #footer_about_us{
+        margin-left: 160px;
+    }
+    #footer_link{
+        margin-left: 50px;
+    }
+    #footer_follow{
+        margin-left: 50px;
+    }
+    #footnote{
+        margin-left: 80px;
+    }
 }
